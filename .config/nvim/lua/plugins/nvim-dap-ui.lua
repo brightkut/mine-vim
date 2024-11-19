@@ -130,18 +130,18 @@ return {
         hostName = "127.0.0.1";
         port = 5005;
       },
-      {
-        name = "Running Service(8089)",
-        type = 'java',
-        request = 'launch',
-        hostName = "127.0.0.1",
-        port = 8089,
-        mainClass = "com.coder.ai_recruiting_bff.AiRecruitingBffApplication",
-        args = {},
-        noDebug = false,
-        vmArgs = '-Dspring.profiles.active=local',
-        console = 'integratedTerminal',
-      },
+      -- {
+      --   name = "Running Service(8089)",
+      --   type = 'java',
+      --   request = 'launch',
+      --   hostName = "127.0.0.1",
+      --   port = 8089,
+      --   mainClass = "com.coder.ai_recruiting_bff.AiRecruitingBffApplication",
+      --   args = {},
+      --   noDebug = false,
+      --   vmArgs = '-Dspring.profiles.active=local',
+      --   console = 'integratedTerminal',
+      -- },
       {
         name = "My Custom Java Run Configuration",
         type = "java",
