@@ -105,6 +105,20 @@ Default keymap of lazy vim (default)[https://www.lazyvim.org/configuration/gener
 	5. leader key + do -> step out
 	6. leader key + dt -> to terminate debug
 
-   
+** Run Java Unit test **
+  1. leader key + jdc -> run test debug class
+  2. leader key + jdm -> run test debug method
+  3. leader key + jrc -> run test class
+  4. leader key + jrm -> run test method
+  5. leader key + jvr -> view unit test report
 
+###### Script To Backup Existing Neovim
+```
+# Backup your existing Neovim configuration
+mv ~/.config/nvim{,.bak}
+# Backup your existing Neovim cache/state (optional but recommended)
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
+```
 
