@@ -48,7 +48,7 @@ alias java8='export JAVA_HOME=~/Library/Java/JavaVirtualMachines/corretto-1.8.0_
 
 ###### Keymap
 
-Default keymap of lazy vim (default)[https://www.lazyvim.org/configuration/general#keymaps]
+Default keymap of lazy vim [default](https://www.lazyvim.org/configuration/general#keymaps)
 
 ####### General 
 	1. ct or dt + 'character' -> change or delete until that character(not remove character)
