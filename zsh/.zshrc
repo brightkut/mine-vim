@@ -158,3 +158,7 @@ export GPG_TTY
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Add Starship
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship.toml
