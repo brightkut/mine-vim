@@ -108,12 +108,13 @@ alias dev="cd /Users/disornthitikornkovit/dev"
 alias zoo-start="/Users/disornthitikornkovit/dev/tech-stack/apache-kafka/kafka_2.13-3.7.0/bin/zookeeper-server-start.sh /Users/disornthitikornkovit/dev/tech-stack/apache-kafka/kafka_2.13-3.7.0/config/zookeeper.properties"
 
 alias kafka-start="/Users/disornthitikornkovit/dev/tech-stack/apache-kafka/kafka_2.13-3.7.0/bin/kafka-server-start.sh /Users/disornthitikornkovit/dev/tech-stack/apache-kafka/kafka_2.13-3.7.0/config/server.properties"
-alias v="nvim"
-alias vv="nvim ."
+alias v="nvim ."
 alias boot-local="mvn spring-boot:run -Dspring-boot.run.profiles=local"
 alias docker-start="open -a Docker"
 alias d="docker"
-
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push origin"
 export PATH="$PATH:$HOME/dev/tech-stack/apache-kafka/kafka_2.13-3.7.0/bin"
 
 #Library
