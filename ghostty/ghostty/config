@@ -1,0 +1,14 @@
+# Setup theme
+theme = "tokyonight_night" 
+
+# background-opacity = 0
+# background-blur = true
+
+window-padding-x = 4 
+
+# Setup keybind of terminal
+keybind = cmd+r=reload_config
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+l=goto_split:right
+keybind = ctrl+k=goto_split:up
+keybind = ctrl+j=goto_split:down
