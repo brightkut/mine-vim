@@ -136,7 +136,7 @@ fi
 echo "Copying new Neovim config from mine-vim/config/nvim-new-version to ~/.config/nvim..."
 
 if [ -d "mine-vim/config/nvim-new-version" ]; then
-    cp -r mine-vim/config/nvim-new-version ~/.config/nvim
+    cp -r mine-vim/config/nvim-new-version-2 ~/.config/nvim
     echo "New Neovim config has been copied."
 else
     echo "Directory mine-vim/config/nvim-new-version does not exist."
