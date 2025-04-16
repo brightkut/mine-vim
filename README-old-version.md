@@ -22,12 +22,29 @@ alias java11='export JAVA_HOME=~/Library/Java/JavaVirtualMachines/corretto-11.0.
 # Alias for Java 8
 alias java8='export JAVA_HOME=~/Library/Java/JavaVirtualMachines/corretto-1.8.0_392/Contents/Home && java -version'
 ```
-##### Step
-1. Clone this repository
-2. Run shell script `install.sh`. This shell script will install `Starship` , `Ghostty terminal` and `Neovim` automatically
-if your computer does not have it. Next it will backup the `Neovim` existing configuration first then move this `Neovim` configuration to your computer
-3. Update file `~/.zshrc` follow the configuration in folder `zsh`
 
+##### Prerequisite
+1. `brew install ripgrep`
+2. `brew install fd`
+3. `brew install lazygit`
+
+##### Step
+1. `cd ~`
+2. Clone git `lazy-vim` from this documentation [lazy-vim-doc](https://www.lazyvim.org/installation)
+3. Run `nvim` to install plugins
+4. Create `java/init.lua` inside the plugins
+5. Copy configuration from this https://github.com/nvim-java/starter-lazyvim and paste in `init.lua`
+6. Edit path `jdk` in `java/init.lua`
+7. rerun `nvim` again to install
+8. Run command `LazyExtras` and enable `dap.core`
+
+
+##### Issue
+1. If you found issue mentioned about `luarocks` run command `brew install luarocks`
+##### Lazy Git
+1. `brew install lazygit`
+2. Create `config.yml` in `~/Library/Application Support/lazygit/`
+3. Add this configuration [lazygit-config](https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md)
 
 ##### Keymap
 
@@ -63,9 +80,10 @@ Default keymap of lazy vim [default](https://www.lazyvim.org/configuration/gener
 	1. leader key + e -> open explorer
 
 ###### Tab 
-	1. `]b` -> go to next tab 
-	2. `[b`-> go to previous tab
-	3. leader key + bd -> close current tab
+	1. leader key + tn -> open new tab from current file
+	2. `]b` -> go to next tab 
+	3. `[b`-> go to previous tab
+	4. leader key + bd -> close current tab
 
 ###### Window 
 	1. leader key + sv -> open split vertical
@@ -78,6 +96,29 @@ Default keymap of lazy vim [default](https://www.lazyvim.org/configuration/gener
 	   
 ###### Git 
 	1. leader key + gb -> toggle gitblame
-`  2. leader key + gg -> open git UI`
+	   
+###### Debug 
+	1. leader key + bb -> mark break point
+	2. leader key + dc -> run debug mode 
+	3. leader key + dj -> step over
+	4. leader key + dk -> step in
+	5. leader key + do -> step out
+	6. leader key + dt -> to terminate debug
+
+######  Run Java Unit test 
+  	1. leader key + jdc -> run test debug class
+  	2. leader key + jdm -> run test debug method
+  	3. leader key + jrc -> run test class
+  	4. leader key + jrm -> run test method
+  	5. leader key + jvr -> view unit test report
+
+###### Script To Backup Existing Neovim
+```
+# Backup your existing Neovim configuration
+mv ~/.config/nvim{,.bak}
+# Backup your existing Neovim cache/state (optional but recommended)
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
 ```
 
