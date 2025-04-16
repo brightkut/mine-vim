@@ -77,7 +77,6 @@ Default keymap of lazy vim [default](https://www.lazyvim.org/configuration/gener
 	1. leader key + fT -> open terminal
 	   
 ###### Git 
-	1. leader key + gb -> toggle gitblame
-`  2. leader key + gg -> open git UI`
-```
-
+`  1. leader key + gb -> toggle gitblame
+  2. leader key + gg -> open git UI`
+`
