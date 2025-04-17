@@ -1,0 +1,53 @@
+set scrolloff=5
+" Do incremental searching.
+set incsearch
+" set up to sync vim clipboard with os clipboard
+set clipboard+=unnamed
+" set relative number
+set number relativenumber
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+let mapleader=" "
+
+" Split section
+map <leader>sv <Action>(SplitVertically)
+map <leader>sh <Action>(SplitHorizontally)
+map <leader>sx <Action>(Unsplit)
+
+" Go to left split
+map <C-h> <C-w>h
+" Go to right split
+map <C-l> <C-w>l
+" Go to top split
+map <C-k> <C-w>k
+" Go to bottom split
+map <C-j> <C-w>j
+" Search File
+map <leader><leader> <Action>(GotoFile)
+" Find Usage
+map <leader>us <Action>(FindUsages)
+" Find In Files
+map <leader>/ <Action>(FindInPath)
+" Replace In Files
+map <leader>sr <Action>(ReplaceInPath)
+" Refactor Rename
+map <leader>rn <Action>(RenameElement)
+" Go to Next error
+map <leader>en <Action>(GotoNextError)
+" Go to Previous error
+map <leader>ep <Action>(GotoPreviousError)
+" Jump to last change
+map <leader>lc <Action>(JumpToLastChange)
+"Open Project Explorer
+map <leader>e <Action>(ToggleProjectView)
+"" Map <leader>d to start debug
+map <leader>d <Action>(Debug)
