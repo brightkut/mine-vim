@@ -42,12 +42,14 @@ map <leader>sr <Action>(ReplaceInPath)
 " Refactor Rename
 map <leader>rn <Action>(RenameElement)
 " Go to Next error
-map <leader>en <Action>(GotoNextError)
+map ]e <Action>(GotoNextError)
 " Go to Previous error
-map <leader>ep <Action>(GotoPreviousError)
+map [e <Action>(GotoPreviousError)
 " Jump to last change
-map <leader>lc <Action>(JumpToLastChange)
-"Open Project Explorer
-map <leader>e <Action>(ToggleProjectView)
+map g; <Action>(JumpToLastChange)
+" Jump to next change
+map g, <Action>(JumpToNextChange)
 "" Map <leader>d to start debug
 map <leader>d <Action>(Debug)
+"Open Project Explorer
+map <leader>e <Action>(HideAllWindows)
