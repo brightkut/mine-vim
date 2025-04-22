@@ -20,24 +20,15 @@ module.exports = {
     selectionColor: 'rgba(248,28,229,0.3)',
     borderColor: '#333',
     padding: '15px 20px',
-    
-    // Set the background of the terminal to transparent
     css: `
-      .terms_terms {
-        background: url('file:///Users/disornthitikornkovit/Downloads/ayano-bg.png') center;
-        background-size: cover;
-      }
+        .terms_terms {
+            background: url('file:///Users/disornthitikornkovit/Downloads/ayano-bg.png') center;
+            background-size: cover;
+        }
+        .terms_termGroup {
+            background: rgba(0,0,0,0.5) !important
+        }
     `,
-    
-    // Ensure the xterm terminal window has a transparent background
-    termCSS: `
-      .xterm {
-        background: transparent !important;
-      }
-    `,
-    
-    // Set the background color of the terminal to transparent to allow the image to show through
-    backgroundColor: 'transparent',
     
     // Disable WebGL for better transparency support
     webGLRenderer: false,
