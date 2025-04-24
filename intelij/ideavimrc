@@ -5,6 +5,12 @@ set incsearch
 set clipboard+=unnamed
 " set relative number
 set number relativenumber
+"" Which-key
+set which-key
+set notimeout
+"set timeoutlen=5000
+"let g:WhichKey_ShowVimActions = 'true'
+let g:WhichKey_ShowTypedSequence = 'true'
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
@@ -17,7 +23,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
 
 let mapleader=" "
-
+nnoremap <Space> <Nop>
 " Split section
 map <leader>sv <Action>(SplitVertically)
 map <leader>sh <Action>(SplitHorizontally)
@@ -53,3 +59,9 @@ map g, <Action>(JumpToNextChange)
 map <leader>d <Action>(Debug)
 "Open Project Explorer
 map <leader>e <Action>(HideAllWindows)
+let g:WhichKeyDesc_toggle_line_breakpoint = 'Toggle Line Breakpoint'
+map <leader>db <Action>(ToggleLineBreakpoint)
+let g:WhichKeyDesc_generate = '<leader>ca Show Generate Popup'
+map <leader>ca <Action>(Generate)
+let g:WhichKeyDesc_debug = '<leader>da Debug'
+map <leader>da <Action>(DebugClass)
