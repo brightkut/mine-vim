@@ -1,4 +1,4 @@
-set scrolloff=5
+set scrolloff=10
 " Do incremental searching.
 set incsearch
 " set up to sync vim clipboard with os clipboard
@@ -65,3 +65,6 @@ let g:WhichKeyDesc_generate = '<leader>ca Show Generate Popup'
 map <leader>ca <Action>(Generate)
 let g:WhichKeyDesc_debug = '<leader>da Debug'
 map <leader>da <Action>(DebugClass)
+" Tab navigation
+map ]b  :tabnext<CR>
+map [b :tabprevious<CR>
