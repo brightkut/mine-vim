@@ -12,9 +12,6 @@ set notimeout
 "let g:WhichKey_ShowVimActions = 'true'
 let g:WhichKey_ShowTypedSequence = 'true'
 
-" Don't use Ex mode, use Q for formatting.
-map Q gq
-
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 
 " Highlight copied text
@@ -23,7 +20,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
 
 let mapleader=" "
-nnoremap <Space> <Nop>
+
 " Split section
 map <leader>sv <Action>(SplitVertically)
 map <leader>sh <Action>(SplitHorizontally)
@@ -46,7 +43,7 @@ map <leader>/ <Action>(FindInPath)
 " Replace In Files
 map <leader>sr <Action>(ReplaceInPath)
 " Refactor Rename
-map <leader>rn <Action>(RenameElement)
+map <leader>rr <Action>(RenameElement)
 " Go to Next error
 map ]e <Action>(GotoNextError)
 " Go to Previous error
@@ -57,8 +54,6 @@ map g; <Action>(JumpToLastChange)
 map g, <Action>(JumpToNextChange)
 "" Map <leader>d to start debug
 map <leader>d <Action>(Debug)
-"Open Project Explorer
-map <leader>e <Action>(HideAllWindows)
 let g:WhichKeyDesc_toggle_line_breakpoint = 'Toggle Line Breakpoint'
 map <leader>db <Action>(ToggleLineBreakpoint)
 let g:WhichKeyDesc_generate = '<leader>ca Show Generate Popup'
@@ -68,3 +63,10 @@ map <leader>da <Action>(DebugClass)
 " Tab navigation
 map ]b  :tabnext<CR>
 map [b :tabprevious<CR>
+
+" Distraction Free Mode
+map <leader>e <Action>(ToggleDistractionFreeMode)
+" Show Line Numbers
+map <leader>sl <Action>(ShowLineNumbers)
+
+Plug "tpope/vim-surround"
