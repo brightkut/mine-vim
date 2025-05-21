@@ -70,3 +70,13 @@ map <leader>e <Action>(ToggleDistractionFreeMode)
 map <leader>sl <Action>(ShowLineNumbers)
 
 Plug "tpope/vim-surround"
+
+" Harpoon
+nmap <leader>hm <action>(HarpoonerToggleQuickMenu)
+
+nmap <leader>aa <action>(HarpoonerAddFile)
+nmap <leader>ad <action>(HarpoonerRemoveFile)
+nmap <leader>a1 <action>(HarpoonerOpenFile0)
+nmap <leader>a2 <action>(HarpoonerOpenFile1)
+nmap <leader>a3 <action>(HarpoonerOpenFile2)
+nmap <leader>ada <action>(HarpoonerClearMenu)
