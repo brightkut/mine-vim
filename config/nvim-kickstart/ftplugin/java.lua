@@ -35,6 +35,15 @@ local config = {
 
   settings = {
     java = {
+      configuration = {
+
+        -- NOTE: add this config 'runtimes' if you want to customize java runtime in code using command :JdtSetRuntime
+        -- for name in 'runtimes' section please use the prefix 'JavaSE-<version>' because jdtls eclipse use this name
+        runtimes = {
+          { name = 'JavaSE-11', path = '~/Library/Java/JavaVirtualMachines/corretto-11.0.18/Contents/Home' },
+          { name = 'JavaSE-21', path = '/Users/disornthitikornkovit/Library/Java/JavaVirtualMachines/corretto-21.0.3/Contents/Home' },
+        },
+      },
       signatureHelp = { enabled = true },
       extendedClientCapabilities = extendedClientCapabilities,
       maven = {
