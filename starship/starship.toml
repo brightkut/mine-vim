@@ -12,6 +12,7 @@ $nodejs\
 $rust\
 $golang\
 $php\
+$time\
 [](fg:#212736 bg:#1d2230)\
 [ ](fg:#1d2230)\
 \n$character\n
@@ -20,7 +21,6 @@ $php\
 # move the rest of the prompt to the right
 right_format = """
 $memory_usage\
-$time
 """
 
 [directory]
@@ -78,6 +78,6 @@ format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 [memory_usage]
 symbol = "🐏"
 style = "fg:#a0a9cb bg:#1d2230"
-format = '[[ $symbol $ram ](fg:#a0a9cb bg:#1d2230)]($style)'
+format = '[[ $symbol $ram mem: $ram_pct ](fg:#a0a9cb bg:#1d2230)]($style)'
 disabled = false
 threshold = -1
