@@ -1,20 +1,14 @@
 format = """
-[░▒▓](#a3aed2)\
-[🐸](bg:#a3aed2 fg:#090c0c)\
-[](bg:#769ff0 fg:#a3aed2)\
+[🐸](fg:#090c0c)\
 $directory\
-[](fg:#769ff0 bg:#394260)\
 $git_branch\
 $git_status\
-[](fg:#394260 bg:#212736)\
 $java\
 $nodejs\
 $rust\
 $golang\
 $php\
 $time\
-[](fg:#212736 bg:#1d2230)\
-[ ](fg:#1d2230)\
 \n$character\n
 """
 
@@ -24,7 +18,7 @@ $memory_usage\
 """
 
 [directory]
-style = "fg:#e3e5e5 bg:#769ff0"
+style = "fg:#1AF1F1 bold"
 format = "[ $path ]($style)"
 #truncation_length = 20
 # truncation_symbol = "…/"
@@ -38,46 +32,46 @@ format = "[ $path ]($style)"
 [git_branch]
 symbol = ""
 style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
+format = '[[<$symbol $branch>](fg:#1AF1F1 bold)]($style)'
 
 [git_status]
 style = "bg:#394260"
-format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
+format = '[[($all_status$ahead_behind >)](fg:#1AF1F1 bold)]($style)'
 
 [nodejs]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+format = '[[ $symbol ($version) ](fg:#1AF1F1 bold)]($style)'
 
 [rust]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+format = '[[ $symbol ($version) ](fg:#1AF1F1 bold)]($style)'
 
 [golang]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+format = '[[ $symbol ($version) ](fg:#1AF1F1 bold)]($style)'
 
 [java]
 symbol = "☕" 
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+format = '[[ $symbol ($version) ](fg:#1AF1F1 bold)]($style)'
 
 [php]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+format = '[[ $symbol ($version) ](fg:#1AF1F1 bold)]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#1d2230"
-format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+style = ""
+format = '[[  $time ](fg:#1AF1F1 bold)]($style)'
 
 [memory_usage]
 symbol = "🐏"
-style = "fg:#a0a9cb bg:#1d2230"
-format = '[[ $symbol $ram mem: $ram_pct ](fg:#a0a9cb bg:#1d2230)]($style)'
+style = "fg:#a0a9cb"
+format = '[[ $symbol $ram mem: $ram_pct ](fg:#1AF1F1 bold)]($style)'
 disabled = false
 threshold = -1
